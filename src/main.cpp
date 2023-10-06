@@ -16,7 +16,7 @@ void loop() {
   char command;
   while (bluetooth.available()) {
     command = (char)bluetooth.read();
-    Serial.println("Received command: " + String(command));
+    // Serial.println("Received command: " + String(command));
     currentTime = millis();
     if (command == '1') {
       driveForward();
