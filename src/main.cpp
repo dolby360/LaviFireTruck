@@ -24,8 +24,10 @@ void loop() {
       driveBackward();
     } else if (command == '4') {
       turnLeft();
+      currentTime = millis();
     } else if (command == '3') {
       turnRight();
+      currentTime = millis();
     }
   }
   if(millis() - currentTime >= 500){

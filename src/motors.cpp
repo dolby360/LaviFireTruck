@@ -42,6 +42,7 @@ void addMovementToTurn(){
         default:
             break;
     }
+    delay(250);
 }
 
 void turnRight(){
